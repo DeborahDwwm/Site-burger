@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Burger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styleReset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="containerHeader">
+        <nav>
+            <div class="containerTop">
+                <div class="logoNav">
+                    <img class="logoBurger" src="logo-BurgerNation.png" alt="Logo burger nation">
+                </div>
+                <div class="boutons">
+                    <img id="burger" class="rotationRight" src="burger-solid.svg" alt="menu burger">
+
+                </div>
+            </div>
+
+            <div class="ulNavClass" id="ulNav">
+                <ul>
+                    <li>
+                        LA CARTE
+                    </li>
+                    <li>
+                        A PROPOS
+                    </li>
+                    <li>
+                        RESERVER
+                    </li>
+                    <div class="divIcones">
+                        <li>
+                            <img class="iconeNav" src="user-solid.svg" alt="logo compte">
+                        </li>
+                        <li>
+                            <img class="iconeNav" src="cart-shopping-solid.svg" alt="logo panier">
+                        </li>
+                        <li>
+                            <img class="iconeNav" src="magnifying-glass-solid.svg" alt="logo recherche">
+                        </li>
+                        <li>
+                            <button class="boutonClickCollect"><img class="iconeNav" src="bag-shopping-solid.svg"
+                                    alt="logo click&collect">&nbspClick&Collect</button>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <section class="carouselGeneral">
+            <div class="containerCarousel">
+                <div class="custom-slider">
+                    <h2 class="slide-text">Fast Food Restaurant</h2>
+                    <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis error labore
+                        aliquam quisquam
+                        necessitatibus alias molestiae consequuntur modi cum repudiandae, aut dolorum debitis, illo
+                        architecto, fuga neque autem nihil at.</p>
+                    <button class="boutonClickCollect slide-text">Commander</button>
+                </div>
+                <div class="custom-slider">
+                    <h2 class="slide-text">Des burgers trop bons</h2>
+                    <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis error labore
+                        aliquam quisquam
+                        necessitatibus alias molestiae consequuntur modi cum repudiandae, aut dolorum debitis, illo
+                        architecto, fuga neque autem nihil at.</p>
+                    <button class="boutonClickCollect slide-text">Commander</button>
+                </div>
+                <div class="custom-slider">
+                    <h2 class="slide-text">Des pizzas délicieuses</h2>
+                    <p class="slide-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis error labore
+                        aliquam quisquam
+                        necessitatibus alias molestiae consequuntur modi cum repudiandae, aut dolorum debitis, illo
+                        architecto, fuga neque autem nihil at.</p>
+                    <button class="boutonClickCollect slide-text">Commander</button>
+                </div>
+
+                <div class="slide-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </section>
+    </header>
+
+    <section class="reduction">
+
+        <article class="cartesReduction">
+            <img class="imageReduc" src="images/o1.jpg" alt="burger">
+            <h3>Tatsy Thursdays</h3>
+            <p class="couponReduc"><span class="pourcentage">20%</span> de réduction</p>
+            <button class="boutonClickCollect">Je commande&nbsp<img class="iconeNav" src="cart-shopping-solid.svg"
+                    alt="icone caddie"></button>
+        </article>
+
+        <article class="cartesReduction">
+            <img class="imageReduc" src="images/o2.jpg" alt="pizza slice">
+            <h3>Pizza Days</h3>
+            <p class="couponReduc"> <span class="pourcentage">15%</span> de réduction</p>
+            <button class="boutonClickCollect">Je commande&nbsp<img class="iconeNav" src="cart-shopping-solid.svg"
+                    alt="icone caddie"></button>
+        </article>
+    </section>
+
+    <section class="laCarte">
+
+        <h4>La Carte</h4>
+
+        <div class="pChoixCarte button-group filters-button-group">
+            <button class="choixCarte button is-checked" data-filter="*">Tous</button>
+            <button class="choixCarte button" data-filter=".burgers">Burgers</button>
+            <button class="choixCarte button" data-filter=".pizzas">Pizzas</button>
+            <button class="choixCarte button" data-filter=".pates">Pâtes</button>
+            <button class="choixCarte button" data-filter=".frites">Frites</button>
+        </div>
+
+        <div class="grid">
+
+            <article class="cardsDeLaCarte element-item pizzas" data-category="pizzas">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f1.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Pizza</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">20€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item burgers" data-category="burgers">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f2.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Burger</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">15€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt="icone caddie"></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item pizzas" data-category="pizzas">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f3.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Pizza</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">17€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item pates" data-category="pates">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f4.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Pasta</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">18€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item frites" data-category="frites">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f5.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">French Fries</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">10€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item pizzas" data-category="pizzas">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f6.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Pizza</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">15€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item burgers" data-category="burgers">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f7.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Tasty Burger</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">12€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item burgers" data-category="burgers">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f8.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Tasty Burger</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">14€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+
+            <article class="cardsDeLaCarte element-item pates" data-category="pates">
+
+                <div class="imageDeLaCarte">
+                    <img class="imageCards" src="images/f9.png" alt="pizza delicious">
+                </div>
+
+                <div class="texteDelaCarte">
+                    <h5 class="titreDeLaCarte">Delicious Pasta</h5>
+                    <p class="pDeLaCarte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui
+                        dolorum provident fugiat!</p>
+                </div>
+
+                <div class="prixEtBoutonCards">
+                    <p class="pDeLaCarte">10€</p>
+                    <button class="boutonClickCollect2"><img class="iconeNav" src="cart-shopping-solid.svg"
+                            alt=""></button>
+                </div>
+
+            </article>
+        </div>
+
+        <button class="boutonClickCollect"> Voir Plus</button>
+
+    </section>
+
+    <section class="burgerNation">
+
+        <h4 class="hBurgerNation">BurgerNation, c'est ...</h4>
+        <p class="pBurgerNation">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet numquam ipsa
+            cumque. Eaque rerum magnam rem neque iure? Quas quibusdam sint inventore rem! Earum quidem at soluta rerum
+            odio animi in laboriosam necessitatibus exercitationem, blanditiis veritatis est dignissimos deleniti.</p>
+        <button class="boutonClickCollect boutonBurgerNation">En savoir +</button>
+        <img class="imgBurgerNation" src="images/about-img.png" alt="image burger about BurgerNation">
+    </section>
+
+    <section class="formulaire">
+        <h4 class="hDuFormulaire">Réserver une table</h4>
+        <form action="" method="post">
+
+            <input type="text" name="nom" id="nom" placeholder="Votre Nom">
+
+            <input type="number" name="telephone" id="telephone" placeholder="Votre Téléphone">
+
+            <input type="text" name="email" id="email" placeholder="Votre Email">
+
+            <select class="selectFormulaire" name="nbPersonnes" id="nbPersonnes">
+                <option value="" disabled selected hidden>Nombre de personnes ?</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select>
+
+            <input type="date">
+
+            <div>
+                <button class="boutonClickCollect boutonBurgerNation">RESERVER</button>
+            </div>
+        </form>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.9024495999806!2d2.561628476685564!3d44.353055106885485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b27d95e0f461ff%3A0x7dde2aa204d1e663!2sAfpa%20-%20Centre%20de%20Rodez!5e0!3m2!1sfr!2sfr!4v1724940899176!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="avis">
+        <h4 class="hDuFormulaire hAvis">Ce que disent nos clients</h4>
+
+        <section class="carouselGeneralAvis">
+            <div class="containerCarouselAvis">
+
+                <article class="divAvis custom-sliderAvis">
+                    <div class="divPAvis slide-textAvis">
+                        <p class="pAvis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dicta nesciunt
+                            reprehenderit eos quae accusantium odit error, eveniet eum blanditiis.</p>
+                        <p class="pAvis"><span class="big">Thomas Toketchup</span></p>
+                        <p class="pAvis">Millau</p>
+                    </div>
+                    <div class="imageBulle slide-textAvis">
+                        <div id="carre"></div>
+                        <img class="imgAvis" src="images/client2.jpg" alt="photo client 2">
+                    </div>
+                </article>
+
+                <article class="divAvis custom-sliderAvis">
+                    <div class="divPAvis slide-textAvis">
+                        <p class="pAvis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dicta nesciunt
+                            reprehenderit eos quae accusantium odit error, eveniet eum blanditiis.</p>
+                        <p class="pAvis"><span class="big">Laura Tatouille</span></p>
+                        <p class="pAvis">Rodez</p>
+                    </div>
+                    <div class="imageBulle slide-textAvis">
+                        <div id="carre"></div>
+                        <img class="imgAvis" src="images/client1.jpg" alt="photo client 1">
+                    </div>
+                </article>
+
+                <article class="divAvis custom-sliderAvis">
+                    <div class="divPAvis slide-textAvis">
+                        <p class="pAvis">2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dicta nesciunt
+                            reprehenderit eos quae accusantium odit error, eveniet eum blanditiis.</p>
+                        <p class="pAvis"><span class="big">Thomas Toketchup</span></p>
+                        <p class="pAvis">Millau</p>
+                    </div>
+                    <div class="imageBulle slide-textAvis">
+                        <div id="carre"></div>
+                        <img class="imgAvis" src="images/client2.jpg" alt="photo client 2">
+                    </div>
+                </article>
+
+                <article class="divAvis custom-sliderAvis">
+                    <div class="divPAvis slide-text">
+                        <p class="pAvis"> 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dicta nesciunt
+                            reprehenderit eos quae accusantium odit error, eveniet eum blanditiis.</p>
+                        <p class="pAvis"><span class="big">Laura Tatouille</span></p>
+                        <p class="pAvis">Rodez</p>
+                    </div>
+                    <div class="imageBulle slide-textAvis">
+                        <div id="carre"></div>
+                        <img class="imgAvis" src="images/client1.jpg" alt="photo client 1">
+                    </div>
+                </article>
+
+                <div class="slide-dot-avis">
+                    <a class="prev btnSliderAvis" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next btnSliderAvis" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <footer>
+        <h4 class="hDuFooter">Nous Contacter</h4>
+        <p class="txtDuFooter">Localisation</p>
+        <p class="txtDuFooter">+01 1234567890</p>
+        <p class="txtDuFooter">burgernation@gmail.com</p>
+<img class="logoDuFooter" src="logo-BurgerNation.png" alt="logo-BurgerNation">
+<p class="pDuFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam dolorem provident! Pariatur nam similique asperiores doloribus. Quidem, cumque hic.</p>
+<div class="divIconeFooter">  
+<img class="iconeFooter" src="images/facebook-brands-solid.svg" alt="icone facebook">
+  <img class="iconeFooter" src="images/twitter-brands-solid.svg" alt="icone twitter">
+  <img class="iconeFooter" src="images/linkedin-brands-solid.svg" alt="icone linkedin">
+  <img class="iconeFooter" src="images/instagram-brands-solid.svg" alt="icone instagram">
+  <img class="iconeFooter" src="images/pinterest-brands-solid.svg" alt="icone pinterest">
+</div>
+  <h4 class="hDuFooter">Horaires d'ouverture</h4>
+  <p class="txtDuFooter">Tous les jours sauf le dimanche</p>
+  <p class="txtDuFooter">Service de 11h30 à 21h00</p>
+  <p class="txtDuFooter">C tous droits réservés par BurgerNation</p>
+</footer>
+
+
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

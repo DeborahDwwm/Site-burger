@@ -1,0 +1,509 @@
+/*------------------General ----------------------------*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+/*------------------mise en page Header ----------------------------*/
+li {
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+}
+
+.logoBurger {
+    width: 250px;
+    object-fit: cover;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+}
+
+.containerHeader {
+    background-image: url(images/bg-nav.jpg);
+    background-position: center;
+    background-size: cover;
+ 
+}
+
+ul {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: black;
+
+}
+
+.divIcones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#burger {
+    width: 35px;
+    height: 35px;
+}
+
+#xButton {
+    width: 35px;
+    height: 35px;  
+}
+
+.iconeNav {
+    width: 15px;
+    height: 15px;
+}
+
+.rotationRight {
+    transform: rotate(360deg);
+    transition: transform .4s linear;
+}
+
+.rotationLeft {
+    transform: rotate(-360deg);
+    transition: transform 1s ease-out;
+}
+
+.boutonClickCollect {
+    background-color:#febe34;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+.containerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    z-index: 1;
+    position: relative;
+    background-color: black;
+}
+
+.logoNav img {
+    height: 100%;
+}
+
+.ulNavClass {
+-webkit-transition: max-height 0.8s linear;
+  -moz-transition: max-height 0.8s linear;
+  -ms-transition: max-height 0.8s linear;
+  -o-transition: max-height 0.8s linear;
+  transition: max-height 0.8s linear;
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+    /* transform: translateY(-200%);
+    transition: transform 0.5s; */
+    /* transform: all 0.5 linear; */
+    z-index: 0;
+}
+
+.openNav {
+    /* transform: translate(0); */
+    max-height: 300px;
+
+}
+
+
+/*------------------mise en page Carousel ----------------------------*/
+
+.carouselGeneral {
+    width: 100%;
+    height: 100vh;
+}
+
+.containerCarousel {
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-dot{ 
+    text-align: left; 
+    padding: 20px;}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover { background-color: #febe34;
+    height: 20px;
+    width: 20px;
+ }
+
+.custom-slider {
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+p {
+    color: white;
+    padding-bottom: 20px;
+}
+
+/*------------------mise en page section réduction ----------------------------*/
+
+.reduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartesReduction {
+    background-color:#212832;
+    border-radius: 3%;
+    width: 90%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.imageReduc {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #febe34;
+    margin-bottom: 5%;
+}
+
+h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 5%;
+}
+
+
+.pourcentage {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*------------------mise en page section La Carte ----------------------------*/
+
+.laCarte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+.grid {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 100%;
+
+}
+
+.pChoixCarte{
+    color: #212832;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 5%;
+    
+}
+
+.choixCarte{
+    font-family: 'poppins';
+    font-size: larger;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.is-checked {
+    color: white;
+    background-color: #212832 ;
+}
+
+.cardsDeLaCarte{
+    background-color: #212832;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 3%;
+    margin-bottom: 50px;
+}
+
+.imageDeLaCarte{ 
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.imageCards{
+    width: 200px;
+    height: 200px;
+    margin: 10% 0;
+    object-fit: contain;
+}
+
+h5, .titreDeLaCarte{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px 5px;
+}
+
+.pDeLaCarte {
+    padding: 5px 5px;
+    
+}
+
+.boutonClickCollect2 {
+    background-color:#febe34;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+}
+
+.texteDelaCarte {
+    margin: 5%;
+}
+
+.prixEtBoutonCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+/*------------------mise en page section Burger Nation ----------------------------*/
+
+.burgerNation {
+    background-color: #212832;
+    padding: 20px 20px;
+}
+
+.hBurgerNation {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.pBurgerNation {
+    color: white;
+    line-height: 25px;
+}
+
+.imgBurgerNation {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.boutonBurgerNation {
+    margin: 20px 0;
+    padding: 15px 30px;
+}
+
+/*------------------mise en page section formulaire ----------------------------*/
+
+.formulaire{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hDuFormulaire{
+    color: #212832;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+input, select, option {
+    background-color: white;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.selectFormulaire {
+    line-height: 5;
+}
+
+/*------------------mise en page section avis ----------------------------*/
+
+.avis {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hAvis {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.divPAvis {
+    background-color: #212832;
+    border-radius: 5px ;
+}
+
+.pAvis {
+    padding: 10px 10px;
+}
+
+.big {
+    font-weight: bold;
+}
+
+.imgAvis {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid #febe34;
+    margin-top: -12px;
+}
+
+#carre {
+    width  : 20px;
+    height : 20px;
+    background: #febe34;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .imageBulle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 30%;
+  }
+
+  .slide-dot-avis {
+    text-align: center;
+  }
+
+  .btnSliderAvis {
+    width: 500px;
+    height: 500px;
+    background-color: #febe34;
+  }
+
+  /*------------------mise en page footer ----------------------------*/
+
+  footer {
+    background-color: #212832;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hDuFooter {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .logoDuFooter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pDuFooter{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .iconeFooter{
+    width: 30px;
+  }
+
+  .divIconeFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+
+  }
+
+/*------------------média queries Desktop ----------------------------*/
+
+@media only screen and (min-width: 768px) {
+.boutons {
+    display: none;
+}
+
+nav{
+    position: relative;
+    min-height: auto;
+}
+
+.ulNavClass {
+display: flex;
+justify-content: space-between;
+align-items: center;
+transform: translateY(0);
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.choixCarte:hover {
+    border: 2px solid #212832;
+ }
+
+}

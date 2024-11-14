@@ -1,0 +1,55 @@
+[{
+    "image":"images/f1.png",
+    "nom" : "Delicious Pizza",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "20€"
+},
+{
+    "image":"images/f2.png",
+    "nom" : "Delicious Burger",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "15€"
+},
+{
+    "image":"images/f3.png",
+    "nom" : "Delicious Pizza",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "17€"
+},
+{
+    "image":"images/f4.png",
+    "nom" : "Delicious Pasta",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "18€"
+},
+{
+    "image":"images/f5.png",
+    "nom" : "French Fries",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "10€"
+},
+{
+    "image":"images/f6.png",
+    "nom" : "Delicious Pizza",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "15€"
+},
+{
+    "image":"images/f7.png",
+    "nom" : "Tasty Burger",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "12€"
+},
+{
+    "image":"images/f8.png",
+    "nom" : "Tasty Burger",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "14€"
+},
+{
+    "image":"images/f9.png",
+    "nom" : "Delicious Pasta",
+    "texte": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis qui dolorum provident fugiat!",
+    "prix": "10€"
+}
+]
